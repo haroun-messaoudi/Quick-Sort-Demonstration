@@ -307,7 +307,7 @@ class QuicksortVisualizer {
         array: [...arr],
         indices: [],
         subarray: { low, high },
-        description: `📍 Divide: Working on subarray from index ${low} to ${high} → [${arr.slice(low, high + 1).join(', ')}]`
+        description: `Divide: Working on subarray from index ${low} to ${high} → [${arr.slice(low, high + 1).join(', ')}]`
       });
       
       const pivotIdx = this.partition(arr, low, high);
@@ -318,7 +318,7 @@ class QuicksortVisualizer {
         array: [...arr],
         indices: [pivotIdx],
         subarray: { low, high },
-        description: `✓ Partition complete! Pivot ${arr[pivotIdx]} is now at position ${pivotIdx}. Left: [${low}:${pivotIdx-1}], Right: [${pivotIdx+1}:${high}]`
+        description: `Partition complete, Pivot ${arr[pivotIdx]} is now at position ${pivotIdx}. Left: [${low}:${pivotIdx-1}], Right: [${pivotIdx+1}:${high}]`
       });
       
       this.quicksort(arr, low, pivotIdx - 1);
@@ -329,7 +329,7 @@ class QuicksortVisualizer {
         array: [...arr],
         indices: [low],
         subarray: { low, high },
-        description: `✓ Single element at index ${low} (value: ${arr[low]}) is already sorted`
+        description: `Single element at index ${low} (value: ${arr[low]}) is already sorted`
       });
     }
   }
