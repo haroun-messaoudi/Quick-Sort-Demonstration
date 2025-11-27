@@ -318,7 +318,7 @@ class QuicksortVisualizer {
         array: [...arr],
         indices: [pivotIdx],
         subarray: { low, high },
-        description: `Partition complete! Pivot ${arr[pivotIdx]} is now at position ${pivotIdx}. Left: [${low}:${pivotIdx-1}], Right: [${pivotIdx+1}:${high}]`
+        description: `Partition complete, Pivot ${arr[pivotIdx]} is now at position ${pivotIdx}. Left: [${low}:${pivotIdx-1}], Right: [${pivotIdx+1}:${high}]`
       });
 
       //recursive calls
